@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эвакуация 1941–1942 · Великое перемещение</title>
+    <link rel="stylesheet" href="styles/index_style_v2.css">
+</head>
+<body>
+
+<div class="hero">
+    <div class="container">
+        <h1>Эвакуация <span>1941–1942</span><br>«Беспримерная эпопея тыла»</h1>
+        <div class="sub">Спасение промышленности и миллионов людей — величайший организационный подвиг СССР</div>
+        <div class="stats">
+            <div class="stat-block"><span class="stat-num">17 млн</span><span class="stat-label">эвакуировано</span></div>
+            <div class="stat-block"><span class="stat-num">1,5 млн</span><span class="stat-label">вагонов</span></div>
+            <div class="stat-block"><span class="stat-num">2593</span><span class="stat-label">предприятия (офиц.)</span></div>
+            <div class="stat-block"><span class="stat-num">88 млн</span><span class="stat-label">под оккупацией</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Введение — развёрнутая информация из источников -->
+    <div class="intro-text">
+        <p>К началу войны на оккупированной врагом территории оказалось <strong>88 млн человек</strong>, 31 850 промышленных предприятий, тысячи шахт и нефтяных скважин. Эвакуация не была предусмотрена довоенными планами — её пришлось создавать с нуля под бомбами. <strong>24 июня 1941</strong> создан Совет по эвакуации во главе с Л.М. Кагановичем (позже его сменил Н.М. Шверник). Уже к июлю 1941 года на восток двинулись первые эшелоны.</p>
+        <p>Английский журналист А. Верт назвал это «одной из самых поразительных организаторских и человеческих эпопей Второй мировой». Железные дороги стали главной артерией спасения: за первые 10 дней войны страна потеряла шестую часть сети, но железнодорожники вывезли оборудование 2600 заводов (по официальным данным; реально — десятки тысяч) и миллионы людей. В тыловых районах — на Урале, в Сибири, Поволжье, Средней Азии — развернулось производство для фронта.</p>
+        <p>Ниже — карта основных центров эвакуации (пункты прибытия выделены оранжевым, пункты отправления — жёлтым). Нажмите на маркер, чтобы перейти к подробностям региона.</p>
+    </div>
+
+    <!-- ИНТЕРАКТИВНАЯ КАРТА СССР -->
+    <div class="map-section">
+        <h2>Карта эвакуации (СССР, 1941–1942)</h2>
+        <div id="evac-map"></div>
+        <div class="map-note">🔸 Оранжевые метки — регионы и города прибытия (тыл). 🔸 Жёлтые — пункты отправления.</div>
+
+        <!-- Чипсы быстрого перехода -->
+        <div class="city-chips">
+            <button class="city-chip" onclick="location.href='templates/kazakhstan.html'">Казахстан</button>
+            <button class="city-chip" onclick="location.href='templates/uzbekistan.html'">Узбекистан</button>
+            <button class="city-chip" onclick="location.href='templates/kirgizia.html'">Киргизия</button>
+            <button class="city-chip" onclick="location.href='templates/turkmenia.html'">Туркмения</button>
+            <button class="city-chip" onclick="location.href='templates/tadgikistan.html'">Таджикистан</button>
+            <button class="city-chip" onclick="location.href='templates/kuibishev.html'">Куйбышев</button>
+            <button class="city-chip" onclick="location.href='templates/stalingrad.html'">Сталинград</button>
+            <button class="city-chip" onclick="location.href='templates/leningrad.html'">Ленинград</button>
+            <button class="city-chip" onclick="location.href='templates/saratov.html'">Саратов</button>
+            <button class="city-chip" onclick="location.href='templates/bashkiria.html'">Башкирия</button>
+            <button class="city-chip" onclick="location.href='templates/ukrain.html'">Украина</button>
+            <button class="city-chip" onclick="location.href='templates/belorussia.html'">Белоруссия</button>
+            <button class="city-chip" onclick="location.href='templates/smolensk.html'">Смоленск</button>
+            <button class="city-chip" onclick="location.href='templates/sverdlovsk.html'">Свердловск (Урал)</button>
+            <button class="city-chip" onclick="location.href='templates/novosibirsk.html'">Новосибирск (Сибирь)</button>
+            <button class="city-chip" onclick="location.href='templates/tyumen.html'">Тюмень</button>
+            <button class="city-chip" onclick="location.href='templates/krasnovodsk.html'">Красноводск (порт приёма)</button>
+        </div>
+    </div>
+
+    <footer>
+        Проект студентов Московского колледжа транспорта (МКТ) в рамках олимпиады «Школа Реальных дел».<br>
+        Источники: М.П. Беленко, М.Я. Пащенко, Г.А. Куманев, С.О. Козурман, Ч.Р. Арсланова, О. Хлевнюк.
+    </footer>
+</div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=69b3790c-24a3-4ee1-8235-3ec6c0ec90b2&lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/index_script.js"></script>
+
+</body>
+</html>

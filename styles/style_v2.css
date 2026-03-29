@@ -1,0 +1,155 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 40px 0;
+    justify-content: center;
+}
+.gallery-item {
+    flex: 1 1 280px;
+    background: #fff9f2;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #e7dfd4;
+    display: block;
+}
+.img-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #d9cdbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f6e5d;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 2px solid #c3844a;
+}
+.gallery-item figcaption {
+    padding: 15px;
+    font-weight: 500;
+    color: #3a2e22;
+    text-align: center;
+}
+.extra-facts {
+    background: #f4ede5;
+    border-radius: 40px;
+    padding: 25px 35px;
+    margin: 30px 0;
+    border-left: 12px solid #b76e3c;
+    display: none;
+}
+.extra-facts.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+.toggle-btn {
+    background: #987a5a;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 15px;
+}
+.toggle-btn:hover {
+    background: #7b5f43;
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0 20px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.stats-highlight {
+    background: #efe3d6;
+    border-radius: 40px;
+    padding: 20px 30px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+.stats-highlight span {
+    font-weight: 800;
+    color: #1d4a5f;
+}
+
+/* ===== СМАРТФОН-СТИЛИ ===== */
+@media (max-width: 700px) {
+    .gallery-item { flex-basis: 100%; }
+}
+
+/* Дополнительные улучшения для смартфонов */
+@media (max-width: 600px) {
+    .gallery {
+        gap: 18px;
+        margin: 25px 0;
+    }
+    .gallery-item {
+        flex-basis: 100%;
+        border-radius: 25px;
+    }
+    .gallery-item img, .img-placeholder {
+        height: 180px;
+    }
+    .gallery-item figcaption {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    .extra-facts {
+        padding: 20px;
+        border-left-width: 8px;
+        font-size: 0.95rem;
+        margin: 20px 0;
+    }
+    .toggle-btn {
+        width: 100%;
+        margin: 0 0 10px 0;
+        text-align: center;
+        padding: 12px 20px;
+    }
+    .btn-group {
+        flex-direction: column;
+        gap: 12px;
+        margin: 20px 0;
+    }
+    .stats-highlight {
+        padding: 15px 20px;
+        font-size: 1rem;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item img, .img-placeholder {
+        height: 150px;
+    }
+    .extra-facts {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .toggle-btn {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+    .stats-highlight {
+        font-size: 0.9rem;
+        padding: 12px 16px;
+    }
+}
