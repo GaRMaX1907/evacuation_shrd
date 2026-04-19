@@ -89,6 +89,11 @@
     font-weight: 800;
     color: #1d4a5f;
 }
+.shrd-logo {
+    max-width: 100%;
+    max-height: auto;
+    padding-top: 20px;
+}
 
 /* ===== СМАРТФОН-СТИЛИ ===== */
 @media (max-width: 700px) {

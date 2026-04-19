@@ -17,7 +17,7 @@ body {
 .hero {
     background: linear-gradient(145deg, #1a2a3a 0%, #0f1b26 100%);
     color: #f0e9de;
-    padding: 60px 30px 50px;
+    padding: 30px 30px 50px;
     border-radius: 0 0 50px 50px;
     box-shadow: 0 20px 30px -10px #00000055;
     margin-bottom: 40px;
@@ -205,6 +205,17 @@ footer {
     color: #5e554a;
     border-top: 3px dashed #bbaa99;
 }
+.shrd-logo {
+    max-width: 100%;
+    max-height: auto;
+    padding-top: 20px;
+}
+.shrd-mini-logo {
+    max-width: 40%;
+    max-height: auto;
+    float: right;
+    padding: 10px;
+} 
 
 /* СМАРТФОН-СТИЛИ */
 @media (max-width: 700px) {
@@ -217,7 +228,7 @@ footer {
         padding: 15px 18px;
     }
     .hero {
-        padding: 40px 20px 35px;
+        padding: 20px 20px 35px;
         border-radius: 0 0 35px 35px;
     }
     .hero h1 {
