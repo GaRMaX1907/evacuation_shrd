@@ -215,7 +215,7 @@ footer {
     max-height: auto;
     float: right;
     padding: 10px;
-} 
+}
 
 /* СМАРТФОН-СТИЛИ */
 @media (max-width: 700px) {
